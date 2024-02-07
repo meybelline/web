@@ -1,0 +1,323 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    font-family: sans-serif;
+    z-index: 100;
+    position: fixed;
+}
+
+#Logo{
+
+        float: left;
+        width: 120px;
+        height: 120px;
+    
+}
+      
+#logo img {
+        width: 100%;
+        height: auto;
+    
+  
+}
+
+
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px;
+    left: 150px;
+    right: 50px;
+    overflow: hidden;
+    padding-left: 0%;
+    float: right;
+    
+    
+    
+}
+
+.elemento, .drop{
+    display: inline-block;
+    
+   
+}
+
+.elemento a, .drop a, .desplegable{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+ 
+}
+
+.elemento a:hover, .drop a:hover{
+    color:rgb(169, 95, 160);
+}
+
+.desplegable{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    border: 1px solid darkgrey;
+    background-color:  #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.sub a{
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.sub a:hover{
+    background-color:#f4f4f4;
+}
+
+.drop:hover .desplegable{
+    display: block;
+}
+
+#contenido{
+    margin-top: 100px;
+}
+
+
+
+
+.flow{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ float: left;
+}
+
+input[type=text]{
+    width: 95%;
+    padding: 10px 10px;
+    border: 1px solid ;
+    background-color: #ffffff;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+form input[type=radio]{
+    display: inline-block;
+}
+
+b{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: grey;
+}
+
+form {
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    /*margin: auto;*/
+       
+}
+
+textarea{
+  line-height: 5px;
+
+}
+
+
+
+.boto{
+    padding: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: grey;
+}
+
+
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+
+.bloop{
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    margin-bottom: -300px;
+}
+
+    
+    
+
+#metodo{
+    float: left;
+    margin-right: 70px;
+
+}
+
+#texta{
+    float: left;
+    margin-right: 500px;
+}
+
+#contenedor{
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    margin-bottom: 200px;
+    margin-left: 800px;
+
+}
+
+#titl{
+    float: left;
+}
+
+
+.separador{
+   right: 200px;
+   size: 2px;
+   margin-left: 00px;
+    
+}
+.checkbtn{
+    float: right;
+    margin-top: 15px;
+    margin-right: 150px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    
+    display: none;
+
+}
+
+
+ @media(max-width:952px){
+#menu{
+     padding-left: 10%;
+    
+}
+    }
+
+@media(max-width: 855px){
+    .checkbtn{
+    display: block;
+}
+
+.sub a:hover{
+ background-color: lightgreen;
+}
+
+
+#menu{
+   position: fixed;
+   width: 100%;
+   background-color: aquamarine;
+   top: 100px;
+   left: -100%;
+   transition: all 0.5s;
+   text-align: center;
+   padding-left: 0;
+}
+
+nav{
+    padding-left: 0;
+}
+
+.elemento, .drop, .dropdown-content{
+    display: block;
+    border-bottom: none;
+    border-top: none;
+}
+
+
+.elemento a, .drop a, .dropdown-content a{
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 15px 0px;
+ text-decoration: none;
+ font-size: 15px;
+}
+
+.desplegable{
+    display: none;
+    position: initial;
+    background: aquamarine;
+}
+
+#check:checked ~ #menu{
+    left: 0;
+}
+   }
+
+   .contenedor {
+    display: flex;
+    justify-content: center;
+    width: 80%; /* Set the desired width */
+    margin: 0 auto; /* Center the div horizontally */
+    font-size: 1.5em; /* Increase the font size */
+  }
+  
+  .izquierda {
+    margin-right: 20px;
+  }
+  
+  .derecha {
+    flex: 1;
+  }
+  
+  .fas {
+    margin-right: 5px;
+  }
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+  
+.valores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.valor {
+    flex-basis: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+  
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .mitad {
+    flex-basis: 45%;
+  }
+
+  .icono {
+    width: 80px;
+    height: 80px;
+  }
+.titulo{
+    color: #423155;
+}
